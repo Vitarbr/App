@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    </head>
+    
+    <body>
+        
+        <h4>Your risk level is {{ risk_level }}</h4>
+        
+        <h1>Would you be okay if you're parents found out about this? [Y/N]</h1>
+        <form method="POST" action="/send8">
+            <div class="form-group">
+                <input type="text" name="can_parents_know">
+            </div>
+            <input class="btn btn-primary" type="submit" value="submit">
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    </head>
+    
+    <body>
+        
+        <h4>Your risk level is {{ risk_level }}</h4>
+        
+        <h1>How long have you been feeling this way? A) This week B) Today C) Longer than a week [A/B/C]</h1>
+        <form method="POST" action="/send7">
+            <div class="form-group">
+                <input type="text" name="how_long_sad">
+            </div>
+            <input class="btn btn-primary" type="submit" value="submit">
+        </form>
+        
+    </body>
+</html>
